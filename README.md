@@ -58,7 +58,7 @@ For this project, students will be using `DuckDuckGo` as their search engine. Wh
 ### <u>Scraping & Formatting Data</u>
 After retrieving links to the most relevant webpages from DuckDuckGo's API, we need to extract the content from those webpages to feed into the LLM. Code is provided for students to use, it is recommended for students to understand how this code works incase they need to modify it (since every website is formatted differently).<br>
 
-> **Note**: The function `scrape_webpages` uses 2 methods to scrape content from webpages. It first attempts to scrape content using `newspaper3k`. If that doesn't work, it falls back to using `Requests` + `BeautifulSoup`.
+* **Note**: The function `scrape_webpages` uses 2 methods to scrape content from webpages. It first attempts to scrape content using `newspaper3k`. If that doesn't work, it falls back to using `Requests` + `BeautifulSoup`.
 
 After scaping information from the most relevant webpages, we need a way to extract the most useful information for answering the user's question from those webpages. This is done in 2 steps:
 
@@ -82,5 +82,6 @@ When working with Hugging Face models, there are several parameters that student
 
 * `Max_New_Tokens`: As the name suggests, this is the maximum number of tokens the model can generate. If this number is too large, the model may not know when to stop and might end up taking 20 minutes to generate a single response.
 * `Temperature`: When determining the next token, the model rolls a dice using the probability distribution. This means a high-probability token is still more likely, but lower-probability ones can still be chosen. Different values of temperature affect the probability distribution to adjust consistency and variety.
+
 
 Even after tweaking some of the model's parameters, it might not output perfect responses. Perhaps it's constantly repeating the same thing over or rambling about unrelated topics after it's answered the quesiton. While there is no set protocol for observing LLM behavior, I've provided what I did to debug model behavior in `Module 4`.
