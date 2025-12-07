@@ -1,5 +1,5 @@
 # Q&A Chatbot README
- **Club**: Northwestern AI Club | Fall 2025<br>
+ **Club**: Northwestern AI Club<br>
  **Author**: Raymond Gu
 
 ## Project Structure
@@ -85,5 +85,6 @@ When working with Hugging Face models, there are several parameters that student
 
 
 Even after tweaking some of the model's parameters, it might not output perfect responses. Perhaps it's constantly repeating the same thing over or rambling about unrelated topics after it's answered the quesiton. While there is no set protocol for observing LLM behavior, I've provided what I did to debug model behavior in `Module 4`.
+
 
 
