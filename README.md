@@ -22,7 +22,7 @@ This project is meant to be a light introduction to important NLP concepts and r
     <td>
       • Hugging Face Account Setup<br>
       • Pre-Training and Fine-Tuning Models<br>
-      • Autoencoders (Embedding Models)<br>
+      • Encoders (Embedding Models)<br>
       • Cosine Similarity<br>
       • Webscraping
     </td>
@@ -85,6 +85,7 @@ When working with Hugging Face models, there are several parameters that student
 
 
 Even after tweaking some of the model's parameters, it might not output perfect responses. Perhaps it's constantly repeating the same thing over or rambling about unrelated topics after it's answered the quesiton. While there is no set protocol for observing LLM behavior, I've provided what I did to debug model behavior in `Module 4`.
+
 
 
 
